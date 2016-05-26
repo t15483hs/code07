@@ -7,9 +7,9 @@ describe("campaignNumber", function(){
 
     it("1 を返す", function(){
       expect(campaignNumber(A)).to.be(1);
-      expect(campaignNumber(B)).to.not.be(1);
-      expect(campaignNumber(C)).to.not.be(1);
-      expect(campaignNumber(D)).to.not.be(1);
+      expect(campaignNumber(B)).not.to.be(1);
+      expect(campaignNumber(C)).not.to.be(1);
+      expect(campaignNumber(D)).not.to.be(1);
     });
   });
 
@@ -23,9 +23,9 @@ describe("campaignNumber", function(){
     it("2 を返す", function(){
       expect(campaignNumber(A)).to.be(2);
       expect(campaignNumber(B)).to.be(2);
-      expect(campaignNumber(C)).to.not.be(2);
-      expect(campaignNumber(D)).to.not.be(2);
-      expect(campaignNumber(E)).to.not.be(2);
+      expect(campaignNumber(C)).not.to.be(2);
+      expect(campaignNumber(D)).not.to.be(2);
+      expect(campaignNumber(E)).not.to.be(2);
     });
   });
 
@@ -36,8 +36,8 @@ describe("campaignNumber", function(){
 
     it("3を返す", function(){
       expect(campaignNumber(A)).to.be(3);
-      expect(campaignNumber(B)).to.not.be(3);
-      expect(campaignNumber(C)).to.not.be(3);
+      expect(campaignNumber(B)).not.to.be(3);
+      expect(campaignNumber(C)).not.to.be(3);
     });
   });
 
@@ -57,10 +57,10 @@ describe("campaignNumber", function(){
       expect(campaignNumber(B)).to.be(4);
       expect(campaignNumber(C)).to.be(4);
       expect(campaignNumber(D)).to.be(4);
-      expect(campaignNumber(E)).to.not.be(4);
-      expect(campaignNumber(F)).to.not.be(4);
-      expect(campaignNumber(G)).to.not.be(4);
-      expect(campaignNumber(H)).to.not.be(4);
+      expect(campaignNumber(E)).not.to.be(4);
+      expect(campaignNumber(F)).not.to.be(4);
+      expect(campaignNumber(G)).not.to.be(4);
+      expect(campaignNumber(H)).not.to.be(4);
     });
   });
 });
@@ -73,7 +73,7 @@ describe("countCampaign1Targets", function(){
     {age: 29, marrid: true, sex: 1}
   ];
 
-  if("配列の要素のうち、キャンペーン1の対象者数を返す", function(){
+  it("配列の要素のうち、キャンペーン1の対象者数を返す", function(){
     epxect(countCampaign1Targets(list)).to.be(1);
   });
 });

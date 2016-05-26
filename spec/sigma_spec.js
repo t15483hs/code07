@@ -1,4 +1,4 @@
-descibe("squareSum", function(){
+describe("squareSum", function(){
   it("1からその数までの二乗和を返す", function(){
     expect(squareSum(10)).to.be(385);
     expect(squareSum(1000)).to.be(33383500);
